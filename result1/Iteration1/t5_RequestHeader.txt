@@ -1,10 +1,10 @@
-GET /catalog/products/RP-SN-01 HTTP/1.1
-Referer: https://jpetstore.cfapps.io/catalog/categories/REPTILES
+GET /catalog/products/FI-FW-02 HTTP/1.1
+Referer: https://jpetstore.cfapps.io/catalog/categories/FISH
 User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
 Accept-Encoding: gzip, deflate
 Accept-Language: fr-FR,fr;q=0.8,en-US;q=0.5,en;q=0.3
 Accept: */*
 Connection: Keep-Alive
 Host: jpetstore.cfapps.io
-Cookie: JSESSIONID=B7C9ADE0C12843520949F181BEBA64DC; __VCAP_ID__=c4e0174e-1afc-4044-4fbc-9d73
+Cookie: JSESSIONID=EAE9905664C9AA5E46D4BCA59EC3C7A6; __VCAP_ID__=c4e0174e-1afc-4044-4fbc-9d73
 

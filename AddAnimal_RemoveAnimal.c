@@ -105,81 +105,86 @@ Type ='Manual'*/
 
 	lr_end_transaction("ClickProduct",LR_AUTO);
 	
-	lr_save_string(lr_paramarr_random("itemId"), "randItem");
-
+	//lr_save_string(lr_paramarr_random("itemId"), "randItem"); 
+	
 	lr_think_time(3);
 
-	lr_start_transaction("ClickItem");
-
-	web_reg_find("Text=JPetStore Demo", 
-		LAST);
-
-	web_reg_find("Text={randItem}", 
-		LAST);
-
-	web_url("ItemID",
-		"URL=https://jpetstore.cfapps.io/catalog/items/{randItem}",
-		"TargetFrame=",
-		"Resource=0",
-		"RecContentType=text/html",
-		"Referer=https://jpetstore.cfapps.io/catalog/products/{randProduct}",
-		"Snapshot=t16.inf",
-		"Mode=HTML",
-		EXTRARES,
-		"URL=/favicon.ico", ENDITEM,
-		LAST);
-
-	lr_end_transaction("ClickItem",LR_AUTO);
-
-	lr_think_time(3);
-
-	lr_start_transaction("AddCart");
-
-	web_reg_find("Text=JPetStore Demo", 
-		LAST);
-
-	web_reg_find("Text=Shopping Cart", 
-		LAST);
-
-	web_url("Add to Cart",
-		"URL=https://jpetstore.cfapps.io/cart?add&itemId={randItem}",
-		"TargetFrame=",
-		"Resource=0",
-		"RecContentType=text/html",
-		"Referer=https://jpetstore.cfapps.io/catalog/items/{randItem}",
-		"Snapshot=t17.inf",
-		"Mode=HTML",
-		EXTRARES,
-		"URL=/favicon.ico", ENDITEM,
-		LAST);
-
-	lr_end_transaction("AddCart",LR_AUTO);
-
-	lr_think_time(3);
-
-	lr_start_transaction("Remove");
-
-	web_reg_find("Text=JPetStore Demo", 
-		LAST);
-
-	web_reg_find("Text=Your cart is empty.", 
-		LAST);
-
-	web_url("Remove",
-		"URL=https://jpetstore.cfapps.io/cart?remove&itemId={randItem}",
-		"TargetFrame=",
-		"Resource=0",
-		"RecContentType=text/html",
-		"Referer=https://jpetstore.cfapps.io/cart",
-		"Snapshot=t18.inf",
-		"Mode=HTML",
-		EXTRARES,
-		"URL=/favicon.ico", ENDITEM,
-		LAST);
-
-	lr_end_transaction("Remove",LR_AUTO);
-
-	lr_think_time(3);
+	for (compteur=1; compteur<=(lr_paramarr_len("itemId")); compteur++)
+	{
+		lr_save_string(lr_paramarr_idx("itemId",compteur), "randItem");
+		
+		lr_start_transaction("ClickItem");
+	
+		web_reg_find("Text=JPetStore Demo", 
+			LAST);
+	
+		web_reg_find("Text={randItem}", 
+			LAST);
+	
+		web_url("ItemID",
+			"URL=https://jpetstore.cfapps.io/catalog/items/{randItem}",
+			"TargetFrame=",
+			"Resource=0",
+			"RecContentType=text/html",
+			"Referer=https://jpetstore.cfapps.io/catalog/products/{randProduct}",
+			"Snapshot=t16.inf",
+			"Mode=HTML",
+			EXTRARES,
+			"URL=/favicon.ico", ENDITEM,
+			LAST);
+	
+		lr_end_transaction("ClickItem",LR_AUTO);
+	
+		lr_think_time(3);
+	
+		lr_start_transaction("AddCart");
+	
+		web_reg_find("Text=JPetStore Demo", 
+			LAST);
+	
+		web_reg_find("Text=Shopping Cart", 
+			LAST);
+	
+		web_url("Add to Cart",
+			"URL=https://jpetstore.cfapps.io/cart?add&itemId={randItem}",
+			"TargetFrame=",
+			"Resource=0",
+			"RecContentType=text/html",
+			"Referer=https://jpetstore.cfapps.io/catalog/items/{randItem}",
+			"Snapshot=t17.inf",
+			"Mode=HTML",
+			EXTRARES,
+			"URL=/favicon.ico", ENDITEM,
+			LAST);
+	
+		lr_end_transaction("AddCart",LR_AUTO);
+	
+		lr_think_time(3);
+	
+		lr_start_transaction("Remove");
+	
+		web_reg_find("Text=JPetStore Demo", 
+			LAST);
+	
+		web_reg_find("Text=Your cart is empty.", 
+			LAST);
+	
+		web_url("Remove",
+			"URL=https://jpetstore.cfapps.io/cart?remove&itemId={randItem}",
+			"TargetFrame=",
+			"Resource=0",
+			"RecContentType=text/html",
+			"Referer=https://jpetstore.cfapps.io/cart",
+			"Snapshot=t18.inf",
+			"Mode=HTML",
+			EXTRARES,
+			"URL=/favicon.ico", ENDITEM,
+			LAST);
+	
+		lr_end_transaction("Remove",LR_AUTO);
+	
+		lr_think_time(3);
+	}
 
 	return 0;
 }

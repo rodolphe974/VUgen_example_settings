@@ -6,81 +6,120 @@
                 "stepId": "STEP1",
                 "stepName": "Url: catalog",
                 "infFile": "t1.inf",
-                "time": 1538737274820
+                "time": 1538742101714
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Url: Animal",
                 "infFile": "t3.inf",
-                "time": 1538737275486
+                "time": 1538742102381
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Url: ProductID",
                 "infFile": "t5.inf",
-                "time": 1538737276180
+                "time": 1538742103080
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Url: ItemID",
                 "infFile": "t6.inf",
-                "time": 1538737276746
+                "time": 1538742103727
             },
             {
                 "stepId": "STEP5",
                 "stepName": "Url: Add to Cart",
                 "infFile": "t7.inf",
-                "time": 1538737277342
+                "time": 1538742104502
             },
             {
                 "stepId": "STEP6",
                 "stepName": "Url: Remove",
                 "infFile": "t8.inf",
-                "time": 1538737278050
+                "time": 1538742105171
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: ItemID",
+                "infFile": "t9.inf",
+                "time": 1538742105793
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: Add to Cart",
+                "infFile": "t10.inf",
+                "time": 1538742106514
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: Remove",
+                "infFile": "t11.inf",
+                "time": 1538742107086
             }
         ],
         "transactions": [
             {
                 "transactionName": "Accueil",
-                "rawStartTime": 1538737273053,
-                "rawEndTime": 1538737274823,
+                "rawStartTime": 1538742099910,
+                "rawEndTime": 1538742101715,
                 "thinkTime": 0.0,
-                "wastedTime": 0.10976886749267578
+                "wastedTime": 0.11040043830871582
             },
             {
                 "transactionName": "ClickAnimal",
-                "rawStartTime": 1538737274845,
-                "rawEndTime": 1538737275487,
+                "rawStartTime": 1538742101719,
+                "rawEndTime": 1538742102383,
                 "thinkTime": 0.0,
-                "wastedTime": 0.06652617454528809
+                "wastedTime": 0.05782508850097656
             },
             {
                 "transactionName": "ClickProduct",
-                "rawStartTime": 1538737275492,
-                "rawEndTime": 1538737276182,
+                "rawStartTime": 1538742102388,
+                "rawEndTime": 1538742103082,
                 "thinkTime": 0.0,
-                "wastedTime": 0.06747627258300781
+                "wastedTime": 0.06606912612915039
             },
             {
                 "transactionName": "ClickItem",
-                "rawStartTime": 1538737276186,
-                "rawEndTime": 1538737276747,
+                "rawStartTime": 1538742103091,
+                "rawEndTime": 1538742103729,
                 "thinkTime": 0.0,
-                "wastedTime": 0.05641913414001465
+                "wastedTime": 0.057498931884765628
             },
             {
                 "transactionName": "AddCart",
-                "rawStartTime": 1538737276750,
-                "rawEndTime": 1538737277344,
+                "rawStartTime": 1538742103733,
+                "rawEndTime": 1538742104505,
                 "thinkTime": 0.0,
-                "wastedTime": 0.0621953010559082
+                "wastedTime": 0.0702049732208252
             },
             {
                 "transactionName": "Remove",
-                "rawStartTime": 1538737277347,
-                "rawEndTime": 1538737278052,
+                "rawStartTime": 1538742104508,
+                "rawEndTime": 1538742105172,
                 "thinkTime": 0.0,
-                "wastedTime": 0.05739784240722656
+                "wastedTime": 0.05499839782714844
+            },
+            {
+                "transactionName": "ClickItem",
+                "rawStartTime": 1538742105181,
+                "rawEndTime": 1538742105795,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05549168586730957
+            },
+            {
+                "transactionName": "AddCart",
+                "rawStartTime": 1538742105799,
+                "rawEndTime": 1538742106516,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07630133628845215
+            },
+            {
+                "transactionName": "Remove",
+                "rawStartTime": 1538742106520,
+                "rawEndTime": 1538742107088,
+                "thinkTime": 0.0,
+                "wastedTime": 0.058893680572509769
             }
         ]
     }
