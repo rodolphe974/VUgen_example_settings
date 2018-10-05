@@ -112,61 +112,51 @@
     <section>
 
         <div id="BackLink">
-            <a href="/catalog/products/FI-SW-01">Return to <span>FI-SW-01</span></a>
+            <a href="/catalog">Return to Main Menu</a>
         </div>
 
         <div id="Catalog">
 
-            <table>
-                <tr>
-                    <td><image src="/images/fish1.gif">Salt Water fish from Australia</td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>
-                            <span>EST-1</span>
-                        </b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <b>
-                            <font size="4">
-                                <span>Large</span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span>Angelfish</span>
-                            </font>
-                        </b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Angelfish</td>
-                </tr>
-                <tr>
-                    
-                    <td>
-                        <span>9999</span> in stock.
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        $<span>16.50</span>
-                    </td>
-                </tr>
+            <div id="Cart">
 
-                <tr>
-                    <td>
-                        <a href="/cart?add&amp;itemId=EST-1" class="Button">
-                            Add to Cart
-                        </a>
-                    </td>
-                </tr>
-            </table>
+                <h2>Shopping Cart</h2>
 
+                <form action="/cart" method="post"><input type="hidden" name="_csrf" value="914923e4-53a4-4d47-9fe5-3cc9b14383ec"/>
+                    <table>
+                        <tr>
+                            <th>Item ID</th>
+                            <th>Product ID</th>
+                            <th>Description</th>
+                            <th>In Stock?</th>
+                            <th>Quantity</th>
+                            <th>List Price</th>
+                            <th>Total Cost</th>
+                            <th>&nbsp;</th>
+                        </tr>
+
+                        <tr>
+                            <td colspan="8">
+                                <b>Your cart is empty.</b>
+                            </td>
+                        </tr>
+
+                        
+                        
+                    </table>
+
+                </form>
+
+                
+
+            </div>
+
+            <div id="MyList">
+                
+            </div>
+
+            <div id="Separator">&nbsp;</div>
         </div>
+
 
     </section>
 </div>

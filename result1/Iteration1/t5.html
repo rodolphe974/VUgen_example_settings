@@ -112,89 +112,68 @@
     <section>
 
         <div id="BackLink">
-            <a href="/catalog">Return to Main Menu</a>
+            <a href="/catalog/categories/REPTILES">Return to <span>REPTILES</span></a>
         </div>
 
         <div id="Catalog">
 
-            <div id="Cart">
+            <h2>Rattlesnake</h2>
 
-                <h2>Shopping Cart</h2>
+            <table>
+                <tr>
+                    <th>Item ID</th>
+                    <th>Product ID</th>
+                    <th>Description</th>
+                    <th>List Price</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/catalog/items/EST-11">EST-11</a>
+                    </td>
+                    <td>RP-SN-01</td>
+                    <td>
+                        <span>Venomless</span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span>Rattlesnake</span>
+                    </td>
+                    <td>
+                        $<span>18.50</span>
+                    </td>
+                    <td>
+                        <a href="/cart?add&amp;itemId=EST-11" class="Button">
+                            Add to Cart
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/catalog/items/EST-12">EST-12</a>
+                    </td>
+                    <td>RP-SN-01</td>
+                    <td>
+                        <span>Rattleless</span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span>Rattlesnake</span>
+                    </td>
+                    <td>
+                        $<span>18.50</span>
+                    </td>
+                    <td>
+                        <a href="/cart?add&amp;itemId=EST-12" class="Button">
+                            Add to Cart
+                        </a>
+                    </td>
+                </tr>
+            </table>
 
-                <form action="/cart" method="post"><input type="hidden" name="_csrf" value="60fa111d-eda7-4a0c-8585-b6c8b09ec406"/>
-                    <table>
-                        <tr>
-                            <th>Item ID</th>
-                            <th>Product ID</th>
-                            <th>Description</th>
-                            <th>In Stock?</th>
-                            <th>Quantity</th>
-                            <th>List Price</th>
-                            <th>Total Cost</th>
-                            <th>&nbsp;</th>
-                        </tr>
-
-                        
-
-                        <tr>
-                            <td>
-                                <a href="/catalog/items/EST-1">
-                                    <span>EST-1</span>
-                                </a>
-                            </td>
-                            <td>
-                                <span>FI-SW-01</span>
-                            </td>
-                            <td>
-                                <span>Large</span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span>Angelfish</span>
-                            </td>
-                            <td>
-                                <span>true</span>
-                            </td>
-                            <td>
-                                <input type="hidden" value="EST-1"/>
-                                <input id="lines0.quantity" name="lines[0].quantity" value="1"/>
-                                
-                            </td>
-                            <td>
-                                $<span>16.50</span>
-                            </td>
-                            <td>
-                                $<span>16.50</span>
-                            </td>
-                            <td>
-                                <a class="Button" href="/cart?remove&amp;itemId=EST-1">Remove</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="7">
-                                Sub Total:
-                                $<span>16.50</span>
-                                <input type="submit" name="update" value="Update Cart"/>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </table>
-
-                </form>
-
-                <a href="/my/orders/create?form" class="Button">
-                    Proceed to Checkout
-                </a>
-
-            </div>
-
-            <div id="MyList">
-                
-            </div>
-
-            <div id="Separator">&nbsp;</div>
         </div>
-
 
     </section>
 </div>

@@ -6,81 +6,81 @@
                 "stepId": "STEP1",
                 "stepName": "Url: catalog",
                 "infFile": "t1.inf",
-                "time": 1538731328585
+                "time": 1538737274820
             },
             {
                 "stepId": "STEP2",
-                "stepName": "Url: FISH",
-                "infFile": "t2.inf",
-                "time": 1538731329239
+                "stepName": "Url: Animal",
+                "infFile": "t3.inf",
+                "time": 1538737275486
             },
             {
                 "stepId": "STEP3",
-                "stepName": "Url: FI-SW-01",
-                "infFile": "t3.inf",
-                "time": 1538731329808
+                "stepName": "Url: ProductID",
+                "infFile": "t5.inf",
+                "time": 1538737276180
             },
             {
                 "stepId": "STEP4",
-                "stepName": "Url: EST-1",
-                "infFile": "t4.inf",
-                "time": 1538731330417
+                "stepName": "Url: ItemID",
+                "infFile": "t6.inf",
+                "time": 1538737276746
             },
             {
                 "stepId": "STEP5",
                 "stepName": "Url: Add to Cart",
-                "infFile": "t5.inf",
-                "time": 1538731331007
+                "infFile": "t7.inf",
+                "time": 1538737277342
             },
             {
                 "stepId": "STEP6",
                 "stepName": "Url: Remove",
-                "infFile": "t6.inf",
-                "time": 1538731331802
+                "infFile": "t8.inf",
+                "time": 1538737278050
             }
         ],
         "transactions": [
             {
                 "transactionName": "Accueil",
-                "rawStartTime": 1538731327131,
-                "rawEndTime": 1538731328587,
+                "rawStartTime": 1538737273053,
+                "rawEndTime": 1538737274823,
                 "thinkTime": 0.0,
-                "wastedTime": 0.10900473594665528
+                "wastedTime": 0.10976886749267578
             },
             {
                 "transactionName": "ClickAnimal",
-                "rawStartTime": 1538731328590,
-                "rawEndTime": 1538731329241,
+                "rawStartTime": 1538737274845,
+                "rawEndTime": 1538737275487,
                 "thinkTime": 0.0,
-                "wastedTime": 0.05511808395385742
+                "wastedTime": 0.06652617454528809
             },
             {
                 "transactionName": "ClickProduct",
-                "rawStartTime": 1538731329244,
-                "rawEndTime": 1538731329810,
+                "rawStartTime": 1538737275492,
+                "rawEndTime": 1538737276182,
                 "thinkTime": 0.0,
-                "wastedTime": 0.05924415588378906
+                "wastedTime": 0.06747627258300781
             },
             {
                 "transactionName": "ClickItem",
-                "rawStartTime": 1538731329814,
-                "rawEndTime": 1538731330419,
+                "rawStartTime": 1538737276186,
+                "rawEndTime": 1538737276747,
                 "thinkTime": 0.0,
-                "wastedTime": 0.05344820022583008
+                "wastedTime": 0.05641913414001465
             },
             {
                 "transactionName": "AddCart",
-                "rawStartTime": 1538731330422,
-                "rawEndTime": 1538731331008,
+                "rawStartTime": 1538737276750,
+                "rawEndTime": 1538737277344,
                 "thinkTime": 0.0,
-                "wastedTime": 0.06043505668640137
+                "wastedTime": 0.0621953010559082
             },
             {
                 "transactionName": "Remove",
-                "rawStartTime": 1538731331012,
-                "rawEndTime": 1538731331804,
+                "rawStartTime": 1538737277347,
+                "rawEndTime": 1538737278052,
                 "thinkTime": 0.0,
-                "wastedTime": 0.06196713447570801
+                "wastedTime": 0.05739784240722656
             }
         ]
     }
