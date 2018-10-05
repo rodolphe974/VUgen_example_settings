@@ -1,0 +1,10 @@
+GET /cart?remove&itemId=EST-1 HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Referer: https://jpetstore.cfapps.io/cart
+Accept-Language: fr-FR,fr;q=0.8,en-US;q=0.5,en;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Host: jpetstore.cfapps.io
+Connection: Keep-Alive
+Cookie: JSESSIONID=44404FA06E7C8D7491F69F40FC3A6F38; __VCAP_ID__=3da3f5b2-9ae1-44a5-53cb-0021
+

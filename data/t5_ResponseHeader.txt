@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Language: fr-FR
+Content-Type: text/html;charset=UTF-8
+Date: Thu, 04 Oct 2018 12:36:56 GMT
+Expires: 0
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Vcap-Request-Id: a88b5204-85ec-4d7d-542a-ad1c50038214
+X-Xss-Protection: 1; mode=block
+transfer-encoding: chunked
+Connection: keep-alive
+

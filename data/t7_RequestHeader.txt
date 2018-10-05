@@ -1,0 +1,8 @@
+GET /catalog HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Host: jpetstore.cfapps.io
+Connection: Keep-Alive
+Accept-Language: fr-FR,fr;q=0.8,en-US;q=0.5,en;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+

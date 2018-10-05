@@ -1,0 +1,218 @@
+<!--
+
+       Copyright 2016-2017 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<!DOCTYPE html>
+<!--
+
+       Copyright 2016-2017 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JPetStore Demo</title>
+    <meta charset="UTF-8">
+    <link rel="StyleSheet" href="/css/jpetstore.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+<div id="Header">
+
+    <div id="Logo">
+        <div id="LogoContent">
+            <a href="/catalog">
+                <img src="/images/logo-topbar.gif" />
+            </a>
+        </div>
+    </div>
+
+
+    <div id="Menu">
+        <div id="MenuContent">
+            <a href="/cart">
+                <img align="middle" name="img_cart" src="/images/cart.gif" />
+            </a>
+            <img align="middle" src="/images/separator.gif" />
+            <a href="/login">
+                Sign In
+            </a>
+            
+            
+            
+            <img align="middle" src="/images/separator.gif" />
+            <a href="/help.html" target="help">
+                ?
+            </a>
+        </div>
+    </div>
+
+    <div id="Search">
+        <div id="SearchContent">
+            <form action="/catalog/products" method="get">
+                <input name="keywords" size="14" value=""/>
+                <input id="searchProducts" type="submit" value="Search" />
+            </form>
+        </div>
+    </div>
+
+    <div id="QuickLinks">
+        <a href="/catalog/categories/FISH">
+            <img src="/images/sm_fish.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/DOGS">
+            <img src="/images/sm_dogs.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/REPTILES">
+            <img src="/images/sm_reptiles.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/CATS">
+            <img src="/images/sm_cats.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/BIRDS">
+            <img src="/images/sm_birds.gif" />
+        </a>
+    </div>
+
+</div>
+
+<div id="Content">
+
+    
+
+    <section>
+
+        <div id="BackLink">
+            <a href="/catalog">Return to Main Menu</a>
+        </div>
+
+        <div id="Catalog">
+
+            <div id="Cart">
+
+                <h2>Shopping Cart</h2>
+
+                <form action="/cart" method="post"><input type="hidden" name="_csrf" value="c1d42818-da00-4f2d-8c8a-e9f01d27d30b"/>
+                    <table>
+                        <tr>
+                            <th>Item ID</th>
+                            <th>Product ID</th>
+                            <th>Description</th>
+                            <th>In Stock?</th>
+                            <th>Quantity</th>
+                            <th>List Price</th>
+                            <th>Total Cost</th>
+                            <th>&nbsp;</th>
+                        </tr>
+
+                        
+
+                        <tr>
+                            <td>
+                                <a href="/catalog/items/EST-1">
+                                    <span>EST-1</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span>FI-SW-01</span>
+                            </td>
+                            <td>
+                                <span>Large</span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span>Angelfish</span>
+                            </td>
+                            <td>
+                                <span>true</span>
+                            </td>
+                            <td>
+                                <input type="hidden" value="EST-1"/>
+                                <input id="lines0.quantity" name="lines[0].quantity" value="1"/>
+                                
+                            </td>
+                            <td>
+                                $<span>16.50</span>
+                            </td>
+                            <td>
+                                $<span>16.50</span>
+                            </td>
+                            <td>
+                                <a class="Button" href="/cart?remove&amp;itemId=EST-1">Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">
+                                Sub Total:
+                                $<span>16.50</span>
+                                <input type="submit" name="update" value="Update Cart"/>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+
+                </form>
+
+                <a href="/my/orders/create?form" class="Button">
+                    Proceed to Checkout
+                </a>
+
+            </div>
+
+            <div id="MyList">
+                
+            </div>
+
+            <div id="Separator">&nbsp;</div>
+        </div>
+
+
+    </section>
+</div>
+
+<div id="Footer">
+
+    <div id="PoweredBy">
+        <a href="http://kazuki43zoo.com" target="homepage">
+            kazuki43zoo.com
+        </a>
+    </div>
+
+    <div id="Banner">
+        
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+[vuser_init]
+SnapshotIndex=I1_vuser_init
+[AddAnimal_RemoveAnimal]
+SnapshotIndex=I1_AddAnimal_RemoveAnimal
+[vuser_end]
+SnapshotIndex=I1_vuser_end

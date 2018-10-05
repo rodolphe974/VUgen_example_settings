@@ -1,0 +1,10 @@
+GET /catalog/products/FI-SW-01 HTTP/1.1
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+Referer: https://jpetstore.cfapps.io/catalog/categories/FISH
+Accept-Language: fr-FR,fr;q=0.8,en-US;q=0.5,en;q=0.3
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Host: jpetstore.cfapps.io
+Connection: Keep-Alive
+Cookie: JSESSIONID=2AF023F3E7A59CD94949B0F8A11F5185; __VCAP_ID__=c4e0174e-1afc-4044-4fbc-9d73
+
